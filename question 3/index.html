@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Q3 Write a JavaScript program to test the first character of a string is uppercase or not. Using regular expression</p>
+    
+    <p>"Hello" is capital so it shows &#8594; </p>
+    <p id="capital"></p>
+    <p>"hello" is not capital so it show &#8594;</p>
+    <p id="non-capital"></p>
+
+
+
+
+
+
+
+
+    <script>
+        function startsWithCapital(word){
+    return word.charAt(0) === word.charAt(0).toUpperCase()
+}
+
+console.log(startsWithCapital("Hello")) // true
+console.log(startsWithCapital("hello")) 
+document.getElementById('capital').innerHTML=startsWithCapital('Hello');
+document.getElementById('non-capital').innerHTML=startsWithCapital("hello");
+
+    </script>
+</body>
+</html>
